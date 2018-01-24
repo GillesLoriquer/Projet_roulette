@@ -119,7 +119,7 @@ public class Jeu {
     }
 
     // Afficher les gains
-    System.out.println("GAIN : ");
+    System.out.println("GAINS : ");
 
     Set<String> gainClefs = gain.keySet();
     for (String s_key : gainClefs) {
@@ -236,15 +236,15 @@ public class Jeu {
    *                                          GESTION DE LA PARTIE
    **************************************************************************************************************/
 
-  /****************************** PARAMETRER LE NOMBRE DE JOUEUR DANS LA PARTIE */
+  /****************************** PARAMETRER LE NOMBRE DE JOUEURS DANS LA PARTIE */
   public static void procSetNbJoueur() {
     boolean nbJoueurInRange;
     do {
-      System.out.print("Indiquer le nombre de joueur (1,2 ou 3) : ");
+      System.out.print("Indiquer le nombre de joueurs (1,2 ou 3) : ");
       Partie.setNbJoueur(Saisie.foncLireInt(10));
       nbJoueurInRange = Util.foncIsInRange(Partie.getNbJoueur(), 1, 3);
 
-      if (!(nbJoueurInRange)) System.out.println("ERR : le nombre de joueur doit être compris entre 1 et 3 !");
+      if (!(nbJoueurInRange)) System.out.println("ERR : le nombre de joueurs doit être compris entre 1 et 3 !");
     }
     while (!(nbJoueurInRange));
   }
@@ -313,7 +313,7 @@ public class Jeu {
       numPari = Saisie.foncLireInt(10);
       pariInRange = Util.foncIsInRange(numPari, 1, 12);
 
-      if (!(pariInRange)) System.out.println("ERR : le nombre de pari doit être compris entre 1 et 12 : ");
+      if (!(pariInRange)) System.out.println("ERR : le nombre de paris doit être compris entre 1 et 12 : ");
     }
     while (!(pariInRange));
 
@@ -398,7 +398,7 @@ public class Jeu {
       valI = Saisie.foncLireInt(10);
       isInRange = Util.foncIsInRange(valI, 0, 36);
 
-      if (!(isInRange)) System.out.print("ERR : le nombre de joueur doit être compris entre 0 et 36 : ");
+      if (!(isInRange)) System.out.print("ERR : le nombre de joueurs doit être compris entre 0 et 36 : ");
       else if (valI == Partie.getCaractNumSorti(0)) Pari.setGain(Pari.getRapport() * Pari.getMise());
     }
     while (!(isInRange));
@@ -409,7 +409,7 @@ public class Jeu {
     Pari.setRapport(17);                            // Rapport du gain (35 contre 1 etc.)
     String valIstrings[];                           // Valeurs jouées par le joueur (ex : 1,2 pour un pari à cheval)
     int valIints[];                                 // Valeurs jouées par le joueur (ex : 1,2 pour un pari à cheval)
-    int nbNumbers = 2;                              // Nombre de numéro à jouer (ex : carré => 4)
+    int nbNumbers = 2;                              // Nombre de numéros à jouer (ex : carré => 4)
     boolean areNumOk = false;                       // True les valeurs entrées sont valables
 
     // Récupérer la mise du joueur et valider que sa mise en inférieur à sa cagnotte
@@ -466,7 +466,7 @@ public class Jeu {
     Pari.setRapport(11);                            // Rapport du gain (35 contre 1 etc.)
     String valIstrings[];                           // Valeurs jouées par le joueur (ex : 1,2 pour un pari à cheval)
     int valIints[];                                 // Valeurs jouées par le joueur (ex : 1,2 pour un pari à cheval)
-    int nbNumbers = 3;                              // Nombre de numéro à jouer (ex : carré => 4)
+    int nbNumbers = 3;                              // Nombre de numéros à jouer (ex : carré => 4)
     boolean areNumOk = false;                       // True les valeurs entrées sont valables
 
     // Récupérer la mise du joueur et valider que sa mise en inférieur à sa cagnotte
@@ -556,7 +556,7 @@ public class Jeu {
     Pari.setRapport(8);                             // Rapport du gain (35 contre 1 etc.)
     String valIstrings[];                           // Valeurs jouées par le joueur (ex : 1,2 pour un pari à cheval)
     int valIints[];                                 // Valeurs jouées par le joueur (ex : 1,2 pour un pari à cheval)
-    int nbNumbers = 4;                              // Nombre de numéro à jouer (ex : carré => 4)
+    int nbNumbers = 4;                              // Nombre de numéros à jouer (ex : carré => 4)
     boolean areNumOk = false;                       // True les valeurs entrées sont valables
 
     // Récupérer la mise du joueur et valider que sa mise en inférieur à sa cagnotte
@@ -624,13 +624,13 @@ public class Jeu {
     Pari.setRapport(5);                             // Rapport du gain (35 contre 1 etc.)
     String valIstrings[];                           // Valeurs jouées par le joueur (ex : 1,2 pour un pari à cheval)
     int valIints[];                                 // Valeurs jouées par le joueur (ex : 1,2 pour un pari à cheval)
-    int nbNumbers = 6;                              // Nombre de numéro à jouer (ex : carré => 4)
+    int nbNumbers = 6;                              // Nombre de numéros à jouer (ex : carré => 4)
     boolean areNumOk = false;                       // True les valeurs entrées sont valables
 
     // Récupérer la mise du joueur et valider que sa mise en inférieur à sa cagnotte
     procSetfMise();
 
-    System.out.print("Quels numéros sixain joues-tu (ex : 1,2,3,4,5,6) : ");
+    System.out.print("Quels numéros de sixain joues-tu (ex : 1,2,3,4,5,6) : ");
 
     do {
       valIstrings = Saisie.foncLireString().trim().split(",");
@@ -759,7 +759,7 @@ public class Jeu {
     // Récupérer la mise du joueur et valider que sa mise en inférieur à sa cagnotte
     procSetfMise();
 
-    System.out.print("Quelle parité joues-tu ([0] Pair | [1] Impaire) : ");
+    System.out.print("Quelle parité joues-tu ([0] Pair | [1] Impair) : ");
 
     do {
       valI = Saisie.foncLireInt(10);

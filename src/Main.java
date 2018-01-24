@@ -1,6 +1,6 @@
 public class Main {
   public static void main(String args[]) {
-    /****************************** 1. PARAMETRER LE NOMBRE DE JOUEUR DANS LA PARTIE */
+    /****************************** 1. PARAMETRER LE NOMBRE DE JOUEURS DANS LA PARTIE */
     Jeu.procSetNbJoueur();
 
     /****************************** 2. RECUPERER LE NOM DE CHAQUE JOUEUR ET SET DES CAGNOTTES A 1000 */
@@ -8,7 +8,7 @@ public class Main {
 
     /****************************** 3. BOUCLER SUR VALIDITE DU BOOLEAN continuerPartie (CLASSE PARTIE) */
     do {
-      /**************************** 4. TIRER LE NUMERO DE SORTI ET CALCULER SES CARACTERISTIQUES */
+      /**************************** 4. TIRER LE NUMERO DE SORTIE ET CALCULER SES CARACTERISTIQUES */
       Jeu.procDefCaractNumSorti();
 
       /**************************** 5. AFFICHER LE TAPIS DE ROULETTE */
@@ -17,7 +17,7 @@ public class Main {
       /**************************** 6. AFFICHER LES TYPES DE PARI */
       Jeu.procTypePari();
 
-      /**************************** 7. BOUCLER SUR LE NOMBRE D'UTILISATEUR DANS LA PARTIE */
+      /**************************** 7. BOUCLER SUR LE NOMBRE D'UTILISATEURS DANS LA PARTIE */
       loopJoueur : for (int joueur = 0; joueur < Partie.getNbJoueur(); joueur++) {
 
         /************************** 8. VERIFIER SI CAGNOTTE > 0. SET DE JOUEUR ET CAGNOTTE AVEC JOUEUR COURANT */

@@ -1,8 +1,8 @@
 public class Partie {
-  private static int nbJoueur;                            // Nombre de joueur de la partie
-  private static int nbPartie = 1;                        // Compteur du nombre de partie
+  private static int nbJoueur;                            // Nombre de joueurs de la partie
+  private static int nbPartie = 1;                        // Compteur du nombre de parties
   private static int caractNumSorti[] = new int[6];       // Tableau contenant le numéro sorti et ses caractéristiques
-  private static boolean continuerPartie;                 // True si on continue la partie, false si non
+  private static boolean continuerPartie;                 // True si on continue la partie, false sinon
 
   public static int getNbJoueur() {
     return nbJoueur;

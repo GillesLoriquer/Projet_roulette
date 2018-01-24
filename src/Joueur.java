@@ -4,7 +4,7 @@ public class Joueur {
   // Variables relatives à chaque joueur (de 1 à 3 joueurs)
   private static String joueur1Nom = "";                                     // Nom du joueur 1
   private static int joueur1Cagnotte = 0;                                    // Cagnotte du joueur 1
-  private static Hashtable<String, Integer> joueur1gain = new Hashtable<>(); // Contient gains ("Nom pari" > gain)
+  private static Hashtable<String, Integer> joueur1gain = new Hashtable<>(); // Contient gains ("Nom pari" > gains)
   private static Hashtable<String, Integer> joueur1perte = new Hashtable<>();// Contient pertes ("Nom pari" > pertes)
 
   private static String joueur2Nom = "";                                     // Idem pour le joueur 2

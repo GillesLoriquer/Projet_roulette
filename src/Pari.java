@@ -2,7 +2,7 @@ public class Pari {
   private static String typePari;                   // Nom du pari
   private static String joueur;                     // Nom du joueur courant
   private static int rapport;                       // Rapport du gain (35 contre 1 etc.)
-  private static int mise;                          // Mise réalisé par le joueur
+  private static int mise;                          // Mise réalisée par le joueur
   private static int gain;                          // Gain réalisé par le joueur
   private static int cagnotte;                      // Cagnotte du joueur courant
   private static boolean nouveauPari;               // True si le joueur souhaite faire un nouveau pari
@@ -43,8 +43,8 @@ public class Pari {
     return cagnotte;
   }
 
-  public static void setCagnotte(int cagnote) {
-    Pari.cagnotte = cagnote;
+  public static void setCagnotte(int cagnotte) {
+    Pari.cagnotte = cagnotte;
   }
 
   public static boolean isNouveauPari() {
